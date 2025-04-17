@@ -1,0 +1,17 @@
+query {
+    item(
+        where: {
+            database: "master",
+            itemId: "{YOUR_ITEM_ID}"
+    }){
+        itemId
+        name
+        path
+        fields(ownFields: true, excludeStandardFields: true) {
+            nodes {
+                name
+                value
+            }
+        }
+    }
+}
