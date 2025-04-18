@@ -1,0 +1,23 @@
+query {
+  search(
+    query: {
+      index: "sitecore_master_index"
+      searchStatement: {
+        criteria: [
+          { criteriaType: SEARCH, field: "Title", value: "YOUR_TITLE_VALUE" }
+        ]
+      }
+    }
+  )
+ {
+    results {
+      innerItem {
+        itemId
+        name
+        title: field(name: "Title") {
+          value
+        }
+      }
+    }
+  }
+}
