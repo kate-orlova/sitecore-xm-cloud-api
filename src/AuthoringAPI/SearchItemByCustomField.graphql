@@ -1,0 +1,23 @@
+query {
+  search(
+    query: {
+      index: "sitecore_master_index"
+      searchStatement: {
+        criteria: [
+          { criteriaType: SEARCH, field: "YOUR_CUSTOM_FIELD", value: "YOUR_CUSTOM_FIELD_VALUE" }
+        ]
+      }
+    }
+  )
+ {
+    results {
+      innerItem {
+        itemId
+        name
+        YOUR_CUSTOM_FIELD: field(name: "YOUR_CUSTOM_FIELD") {
+          value
+        }
+      }
+    }
+  }
+}
