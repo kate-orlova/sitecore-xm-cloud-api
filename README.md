@@ -5,7 +5,12 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/kate-orlova/sitecore-xm-cloud-api)
 
 # Sitecore XM Cloud API Repository
-Sitecore XM Cloud API repository is a set of useful GraphQL queries aiming to accelerate integration with XM Cloud leveraging the native Authoring and Management GraphQL APIs. 
+Sitecore XM Cloud API repository is a set of useful GraphQL queries aiming to accelerate integration with XM Cloud leveraging the native Authoring and Management GraphQL APIs.
+
+## Authoring API
+1. `..\src\AuthoringAPI\GetItemById.graphql` - to get an Item by Item Id
+2. `..\src\AuthoringAPI\SearchItemByTitle.graphql` - to search an Item by Title field
+3. `..src\AuthoringAPI\SearchItemByCustomField.graphql` - to search an Item by a custom field
 
 # Contribution
 Hope you found these GraphQL queries helpful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
